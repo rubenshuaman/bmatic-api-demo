@@ -1,0 +1,35 @@
+<section class="page">
+    <section class="ui-section">
+      <div class="clearfix">
+        <h2 class="section-header">Seleccione datos:</h2>
+      </div>
+        <div class="card bg-white">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-sm-4">
+                      <div class="divider"></div>
+                      <md-datepicker ng-model="bookingCtrl.myDate"
+                      md-placeholder="Introducir fecha"
+                      md-min-date="bookingCtrl.minDate" 
+                      md-max-date="bookingCtrl.maxDate"
+                      md-date-filter="bookingCtrl.onlyWeekendsPredicate">
+                    </md-datepicker>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="divider-sm"></div>
+                      <md-input-container class="full-width">
+                          <label>Hora</label>
+                          <md-select ng-model="bookingCtrl.selectTime" aria-label="select">
+                              <md-option ng-repeat="time in bookingCtrl.listTimes" value="{{time.id}}"> {{time.name}} </md-option>
+                          </md-select>
+                      </md-input-container>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="divider"></div>
+                      <md-button class="md-raised btn-w-sm md-primary" ng-click="bookingCtrl.save();">Agendar</md-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

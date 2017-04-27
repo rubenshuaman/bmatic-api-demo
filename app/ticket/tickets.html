@@ -1,0 +1,23 @@
+<section class="page">
+    <section class="ui-section">
+      <div class="clearfix">
+        <h2 class="section-header">Seleccione una agencia:</h2>
+      </div>
+        <div class="card bg-white" ng-click="ticketsCtrl.navigateTo(branch.id, $event)" ng-repeat="branch in ticketsCtrl.listBranchs">
+            <div class="card-content">
+                <span class="card-title">{{branch.name}}</span>
+                <p>{{branch.ticket}}</p>
+            </div>
+        </div>
+        <div class="md-padding actionButtons btn-float-next" layout="column">
+          <md-fab-speed-dial md-open="false" md-direction="up"
+            class="md-scale md-fab-bottom-right md-hover-full speed-dial">
+            <md-fab-trigger>
+              <md-button aria-label="menu" class="md-fab md-warn" ng-click="ticketsCtrl.addTicket();">
+                <md-icon class="material-icons">add</md-icon>
+              </md-button>
+            </md-fab-trigger>
+          </md-fab-speed-dial>
+        </div>
+    </section>
+</section>

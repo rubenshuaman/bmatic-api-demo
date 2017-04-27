@@ -1,0 +1,15 @@
+<section class="page">
+    <section class="ui-section">
+      <div class="clearfix">
+        <h2 class="section-header">Seleccione una agencia:</h2>
+      </div>
+      <div class="card bg-white" ng-click="branchCtrl.navigateTo(branch.id)" ng-repeat="branch in branchCtrl.listBranchs">
+          <div class="card-content">
+              <div class="card-title">
+                <md-icon class="material-icons icon-color">home</md-icon>
+                <span>&nbsp;{{branch.name}}</span>
+              </div>
+          </div>
+      </div>
+    </section>
+</section>

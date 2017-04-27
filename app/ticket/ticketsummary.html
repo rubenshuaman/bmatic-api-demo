@@ -1,0 +1,32 @@
+<div class="page">
+    <div class="ui-section">
+      <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+              <div class="card bg-white card-border-style">
+                  <div class="card-content">
+                      <div class="row alignment-center">
+                          <span class="type-C-quadruple">{{ticketSummaryCtrl.ticket.dTicket}}</span>
+                      </div>
+                      <div class="row alignment-center">
+                          <span class="type-A">AGENCIA SAN ISIDRO</span>
+                      </div>
+                      <div class="row alignment-center">
+                          <span class="type-A">FECHA : {{ticketSummaryCtrl.ticket.fGenerado | dateFilter}}</span>
+                      </div>
+                      <div class="row alignment-center">
+                              <span class="type-A">HORA : {{ticketSummaryCtrl.ticket.hGenerada | timeFilter}}</span>
+                      </div>
+                      <div class="row alignment-center line-white">
+                        <span class="type-A">BIENVENIDO</span>
+                      </div>
+                      <div class="row alignment-center">
+                        <span class="type-A">Alta</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-3"></div>
+      </div>
+    </div>
+</div>
