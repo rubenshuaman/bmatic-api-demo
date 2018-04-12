@@ -1,10 +1,7 @@
 <div class="">
     <div class="ui-section">
-      <!--<div class="map-header">
-        <h2 class="section-header">Seleccione una agencia:</h2>
-      </div>-->
         <div class="card bg-white map-style">
-            <div map-lazy-load="http://maps.google.com/maps/api/js?key=AIzaSyCuGMb6ZUQTnRDJIHL3Y0yEwSiGkBbiXOw">
+            <div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyCuGMb6ZUQTnRDJIHL3Y0yEwSiGkBbiXOw">
                 <map id="gmap" class="ui-map" zoom="14" center="current-location" scrollwheel="false">
                 <marker id='{{branch.id}}'
                 icon="{{branch.icon}}"
@@ -19,11 +16,11 @@
                         <b>{{ticketCtrl.branch.name}}</b><div class="divider-sm"></div>
                         <span>{{ticketCtrl.branch.address}}</span><div class="divider-sm"></div>
                         <div ng-if="ticketCtrl.branch.status !== 'INACTIVE'">
-                          <span ng-show="ticketCtrl.branch.congestion === 'LOW'">Congesti&oacute;n <b class="congestion-low">Baja</b></span>
-                          <span ng-show="ticketCtrl.branch.congestion === 'MEDIUM'">Congesti&oacute;n <b class="congestion-medium">Media</b></span>
-                          <span ng-show="ticketCtrl.branch.congestion === 'HIGH'">Congesti&oacute;n <b class="congestion-high">Alta</b></span>
+                          <span ng-show="ticketCtrl.branch.congestion === 'LOW'"><b class="congestion-low">Congesti&oacute;n Baja</b></span>
+                          <span ng-show="ticketCtrl.branch.congestion === 'MEDIUM'"><b class="congestion-medium">Congesti&oacute;n Media</b></span>
+                          <span ng-show="ticketCtrl.branch.congestion === 'HIGH'"><b class="congestion-high">Congesti&oacute;n Alta</b></span>
                           <div class="divider-sm"></div>
-                          <md-button class="md-raised btn-w-sm md-primary" ng-click="ticketCtrl.clicked(ticketCtrl.branch);">Ticket</md-button>
+                          <md-button class="md-raised btn-w-sm md-primary pull-right" ng-click="ticketCtrl.clicked(ticketCtrl.branch);">Generar Ticket</md-button>
                         </div>
                         <span ng-if="ticketCtrl.branch.status === 'INACTIVE'">No disponible en este momento</span>
                     </div>

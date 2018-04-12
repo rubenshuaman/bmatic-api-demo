@@ -1,5 +1,5 @@
 <div class="page-signup">
-    <div class="wrapper">
+    <div class="wrapper-register">
         <div class="main-body">
             <div class="body-inner">
                 <div class="card bg-white">
@@ -36,22 +36,14 @@
                                     <div class="ui-input-group">
                                         <input type="text" ng-model="registerCtrl.username" ng-minlength="5" required class="form-control">
                                         <span class="input-bar"></span>
-                                        <label>Usuario</label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="ui-input-group">
-                                        <input type="password" ng-model="registerCtrl.password" ng-minlength="5" required class="form-control">
-                                        <span class="input-bar"></span>
-                                        <label>Password</label>
+                                        <label>Nombre Usuario</label>
                                     </div>
                                 </div>
                             </fieldset>
                         </form>
                     </div>
                     <div class="card-action no-border text-right">
-                      <md-button class="md-raised btn-w-sm" ng-click="registerCtrl.cancel();">Cancelar</md-button>
-                      <md-button class="md-raised btn-w-sm md-accent" ng-disabled="registerForm.$invalid" ng-click="registerCtrl.register();">Registrar</md-button>
+                        <md-button class="md-raised btn-w-sm md-accent" ng-disabled="registerForm.$invalid" ng-click="registerCtrl.login();">Login</md-button>
                     </div>
                 </div>
             </div>
